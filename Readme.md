@@ -70,8 +70,6 @@ To get a local copy up and running follow these simple example steps.
 
 
 
-
-
 ### Installation
 
 1. Clone the repo
@@ -88,6 +86,18 @@ To get a local copy up and running follow these simple example steps.
 2. Open Browser with 
    ```JS
    http://localhost:8080/
+   ```
+
+3. Admin User Details
+   ```JS
+   username : amit
+   password : amit123
+   ```
+
+4. Normal User Details (Restricted)
+   ```JS
+   username : Taniya
+   password : Taniya123
    ```
 
 
