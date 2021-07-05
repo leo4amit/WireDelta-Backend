@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "WireDelta",
+		"_postman_id": "f7d65c4d-a2f7-79c4-dbdd-3154d8f1e2ff",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"url": "http://localhost:8080/api/v1/user/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\":\"amit\",\n\t\"password\":\"amit123\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GETJOBS",
+			"request": {
+				"url": "http://localhost:8080/api/v1/jobs/getAllJobs",
+				"method": "GET",
+				"header": [
+					{
+						"key": "AccessToken",
+						"value": "eyJhbGciOiJIUzI1NJ9.eyJqdGkiOiIzIiwiaWF0IjoxNjI1NDI4MzgyLCJpc3MiOiJhbWl0LnNoYXJtYUBnbWFpbC5jb20iLCJzdWIiOiJBZG1pbiIsImV4cCI6MTYyNTUxNDc4Mn0.iTH_Yh4k75oO_oiV8BSvaR-mvbqfhtyWRD2YE986TLU",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateStatus",
+			"request": {
+				"url": "http://localhost:8080/api/v1/jobs/updateStatus",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"6\",\n \"status\":\"ACCEPTED\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateStatus",
+			"request": {
+				"url": "http://localhost:8080/api/v1/jobs/updateStatus",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "AccessToken",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzIiwiaWF0IjoxNjI1NDI4MzgyLCJpc3MiOiJhbWl0LnNoYXJtYUBnbWFpbC5jb20iLCJzdWIiOiJBZG1pbiIsImV4cCI6MTYyNTUxNDc4Mn0.iTH_Yh4k75oO_oiV8BSvaR-mvbqfhtyWRD2YE986TLU",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"6\",\n \"status\":\"ACCEPTED\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
