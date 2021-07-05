@@ -22,13 +22,13 @@ public class JobDto {
 
     private BigDecimal price;
 
-    private Date dueDate;
+    private String dueDate;
 
     private Boolean isDone;
 
-    private Date createdAt;
+    private String createdAt;
 
-    private Date updatedAt;
+    private String updatedAt;
 
     private String location;
 

@@ -11,6 +11,7 @@ import com.wiredelta.backend.models.response.JobProposalResponse;
 import com.wiredelta.backend.models.response.UpdateProposalStatusResponse;
 import com.wiredelta.backend.repository.JobsProposalRepository;
 import com.wiredelta.backend.services.JobsService;
+import com.wiredelta.backend.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -57,12 +58,12 @@ public class JobsServiceImpl implements JobsService {
         JobDto jobDto = new JobDto();
         jobDto.setId(jobsEntity.getId());
         jobDto.setDescription(jobsEntity.getDescription());
-        jobDto.setDueDate(jobsEntity.getDueDate());
-        jobDto.setCreatedAt(jobsEntity.getCreatedAt());
+        jobDto.setDueDate(Utils.getStringFromDate(jobsEntity.getDueDate()));
+        jobDto.setCreatedAt(Utils.getStringFromDate(jobsEntity.getCreatedAt()));
         jobDto.setIsDone(jobsEntity.getIsDone());
         jobDto.setIsEmergency(jobsEntity.getIsEmergency());
         jobDto.setPrice(jobsEntity.getPrice());
-        jobDto.setUpdatedAt(jobsEntity.getUpdatedAt());
+        jobDto.setUpdatedAt(Utils.getStringFromDate(jobsEntity.getUpdatedAt()));
         jobDto.setTitle(jobsEntity.getTitle());
         jobDto.setLatitude(jobsEntity.getLatitude());
         jobDto.setLongitude(jobsEntity.getLongitude());
