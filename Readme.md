@@ -29,7 +29,6 @@
     </li>
     <li><a href="#usage">Run</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -42,7 +41,11 @@ The Project is consist of both of backend and frontend. Basic functionalities  o
 
 * Login User who has Admin role and restrict others users to access admin panel. 
 * List down the Job proposals and allow the admin user to accept and reject the job proposals.
-* Actions should be token based and token must have expiry
+* Actions should be token based and token must have expiry.
+* For demo purpose project is using in memory database and data seeder encapsulated inside project.
+* After Login a JWT token issued for the user which has expiry time and is required for further API Call.
+* Application Dashboard can be access by only admin users.
+
 
 
 ### Built With
@@ -58,8 +61,8 @@ Following frameworks and ORMS and database has been used for the project.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+project is build using spring-boot framework for backend and AngularJS for frontend. In order 
+to build the project following prerequisites required.
 
 ### Prerequisites
 
@@ -67,7 +70,6 @@ To get a local copy up and running follow these simple example steps.
 * NodeJs 
 * npm
 * gradle (optional)
-
 
 
 ### Installation
@@ -104,5 +106,5 @@ To get a local copy up and running follow these simple example steps.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [amit sharma](https://twitter.com/your_username) - leo4amit@gmail.com
+Your Name - [amit sharma]() - leo4amit@gmail.com
 
