@@ -39,7 +39,7 @@
 
 The Project is consist of both of backend and frontend. Basic functionalities  of project are 
 
-* Login User who has Admin role and restrict others users to access admin panel. 
+* Allow Login to  user who has Admin role and restrict others users to access admin panel. 
 * List down the Job proposals and allow the admin user to accept and reject the job proposals.
 * Actions should be token based and token must have expiry.
 * For demo purpose project is using in memory database and data seeder encapsulated inside project.
