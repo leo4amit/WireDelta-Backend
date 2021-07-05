@@ -30,4 +30,14 @@ public class JobDto {
 
     private Date updatedAt;
 
+    private String location;
+
+    private String boatType;
+
+    private String service;
+
+    private String boatLocation;
+
+    private String userName;
+
 }

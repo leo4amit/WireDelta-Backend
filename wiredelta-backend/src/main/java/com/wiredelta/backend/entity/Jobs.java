@@ -44,4 +44,10 @@ public class Jobs {
     @JoinColumn(name="user_id", referencedColumnName = "userId")
     private User user;
 
+    private String service;
+
+    private String boatType;
+
+    private String location;
+
 }

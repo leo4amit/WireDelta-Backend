@@ -66,6 +66,10 @@ public class JobsServiceImpl implements JobsService {
         jobDto.setTitle(jobsEntity.getTitle());
         jobDto.setLatitude(jobsEntity.getLatitude());
         jobDto.setLongitude(jobsEntity.getLongitude());
+        jobDto.setUserName(jobsEntity.getUser().getUserName());
+        jobDto.setBoatLocation(jobsEntity.getLocation());
+        jobDto.setBoatType(jobsEntity.getBoatType());
+        jobDto.setService(jobsEntity.getService());
         return jobDto;
     }
 
