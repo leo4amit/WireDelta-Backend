@@ -47,10 +47,12 @@ The Project is consist of both of backend and frontend. Basic functionalities  o
 
 ### Built With
 Following frameworks and ORMS and database has been used for the project.
-* [Spring-boot]()
-* [Spring-data-jpa](ORM)
-* [h2-database]()
-* [Angular Js]()
+* [Java 11]()
+* [Spring-boot (Back-End Framework)]()
+* [Spring-data-jpa (ORM)]()
+* [H2-database (In Memeory Database)]()
+* [Angular Js(Front-End Framework)]()
+* [Gradle (Build Tool)]()
 
 
 <!-- GETTING STARTED -->
@@ -61,11 +63,14 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+* Java SDK 11
+* NodeJs 
 * npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* gradle (optional)
+
+
+
+
 
 ### Installation
 
@@ -73,25 +78,17 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/leo4amit/WireDelta-Backend
    ```
-2. Install NPM packages
+
+### Run
+
+1. In main project directory enter following command
    ```sh
-   npm install
+   ./gradlew bootRun
    ```
-3. Enter your API in `config.js`
+2. Open Browser with 
    ```JS
-   const API_KEY = 'ENTER YOUR API';
+   http://localhost:8080/
    ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
 
 
 <!-- CONTACT -->
