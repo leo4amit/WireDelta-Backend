@@ -1,0 +1,77 @@
+<mat-dialog-content>
+<mat-toolbar color="primary" >  
+  <span class="tool-span">Job Proposal</span>
+</mat-toolbar>
+
+<section>
+    <div class="example-label">Boat Type</div>
+    <div class="example-button-row">
+      <span>{{jobData.jobDto.boatType}}</span>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section>
+    <div class="example-label">Boat Location</div>
+    <div class="example-button-row">
+      <span>{{jobData.jobDto.boatLocation}}</span>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section>
+    <div class="example-label">Due Date</div>
+    <div class="example-button-row">
+      <span>{{jobData.jobDto.dueDate}}</span>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+
+  <section>
+    <div class="example-label">Job Type</div>
+    <div class="example-button-row">
+      <span>{{(jobData.jobDto.isEmergency)?'Emergency':'Normal'}}</span>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+
+  <section>
+    <div class="example-label">Job Description</div>
+    <div class="example-button-row">
+      <span>{{jobData.jobDto.description}}</span>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+
+  <section>
+    <div class="example-label">Company</div>
+    <div class="example-button-row">
+      <span>{{jobData.company}}</span>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+
+  <section>
+    <div class="example-label">userName</div>
+    <div class="example-button-row">
+      <span>{{jobData.jobDto.userName}}</span>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+
+  <section>
+    <div class="example-label">Job Status</div>
+    <div class="example-button-row">
+      <span>{{jobData.status}}</span>
+    </div>
+  </section>
+
+  <mat-divider></mat-divider>
+
+    <section>
+        <div class="example-label"></div>
+        <div class="example-button-row">
+          <button mat-raised-button color="primary" (click)="acceptJobProposal()">Accept</button>
+          <button mat-raised-button color="accent" (click)="rejectJobProposal()">Reject</button>
+        </div>
+    </section>
+
+ </mat-dialog-content>

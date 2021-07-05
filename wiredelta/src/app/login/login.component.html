@@ -1,0 +1,31 @@
+<div class="imgdiv">
+
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="25">
+        <mat-toolbar color="primary" >  
+            <span class="tool-span">NJORD</span>
+        </mat-toolbar>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="login-form" [formGroup]="formGroup" (ngSubmit)="loginProcess()">
+            <mat-form-field class="form-field">
+            <input matInput placeholder="Username" formControlName="userName">
+
+            <mat-hint class="mat-error-h" *ngIf="formGroup?.get('userName')?.touched  && formGroup?.get('userName')?.errors?.required"> 
+                UserName is Required</mat-hint>
+            </mat-form-field>
+        
+            <mat-form-field class="form-field">
+                <input matInput type="password" placeholder="Password" formControlName="password">
+                
+                <mat-hint class="mat-error-h" *ngIf="formGroup?.get('password')?.touched  && formGroup?.get('password')?.errors?.required"> 
+                    Password is Required</mat-hint>
+            </mat-form-field>
+
+            <div *ngIf="signInError && signInError.length > 0"
+                class="error-message">
+                 <span>{{signInError}}</span>
+            </div>
+         <button mat-raised-button class="submit-button" type="submit">Login</button> 
+        </form>
+    </mat-card>
+</div>
+</div>

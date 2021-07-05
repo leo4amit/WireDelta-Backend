@@ -1,0 +1,45 @@
+.main-div mat-card{
+padding: 0px;
+height: 390px;
+}
+
+.imgdiv{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url("/assets/images/login_bg.png");
+}
+
+.login-form{
+    padding: 30px;
+}
+
+.form-field{
+    margin-top: 20px;
+}
+
+.submit-button{
+    margin-top: 35px;  
+}
+
+.title-center {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .tool-span{
+    width: 100%;text-align: center;
+  }
+
+  .mat-error-h{
+    color:red;
+  }
+
+  .error-message{
+      margin-top: 5px;
+      color: red;
+      font-size: 12px;
+    }
+    
